@@ -9,7 +9,7 @@ const { app, server } = require("./socket/index");
 // const app = express()
 app.use(
   cors({
-    origin:process.env. FRONTEND_URL,
+    origin:"https://chatapp-frontend-ten-jade.vercel.app",
     credentials: true,
   })
 );
