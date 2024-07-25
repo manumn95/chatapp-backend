@@ -8,10 +8,7 @@ const { app, server } = require("./socket/index");
 
 // const app = express()
 app.use(
-  cors({
-    origin: "https://chatapp-frontend-ten-jade.vercel.app",
-    credentials: true,
-  })
+  cors()
 );
 app.use(express.json());
 app.use(cookiesParser());
